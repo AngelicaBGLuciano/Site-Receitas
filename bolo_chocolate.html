@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolo de Chocolate - Receitas Deliciosas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header (reaproveitado do index.html) -->
+    <header class="custom-header py-3">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <!-- Logo -->
+                <a href="#" class="logo me-3">
+                    <img src="imagens/logoBranco.png" alt="Logo Receitas Deliciosas" class="img-fluid" style="max-height: 60px;">
+                </a>
+
+                <!-- Nome do Site e Links (Centralizados) -->
+                <div class="flex-grow-1 text-center">
+                    <h1 class="text-white mb-3">Receitas Deliciosas</h1>
+                    <div class="d-flex justify-content-center gap-4">
+                        <a href="index.html" class="text-white text-decoration-none fw-bold">Início</a>
+                        <a href="#" class="text-white text-decoration-none fw-bold">Receitas</a>
+                        <a href="#" class="text-white text-decoration-none fw-bold">Sobre</a>
+                        <a href="#" class="text-white text-decoration-none fw-bold">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Botão de Toggle para Modo Noturno (reaproveitado do index.html) -->
+    <div class="text-end mt-3 me-3">
+        <label class="switch">
+            <input type="checkbox" id="toggle-mode">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Conteúdo Principal -->
+            <div class="col-lg-8">
+                <h1 class="mb-4">Bolo de Chocolate</h1>
+                <img src="bolo-de-chocolate.jpg" alt="Bolo de Chocolate" class="img-fluid rounded mb-4">
+                <p class="lead">Um delicioso bolo de chocolate para adoçar o seu dia. Perfeito para festas, lanches ou sobremesas especiais.</p>
+
+                <!-- Ingredientes -->
+                <h2 class="mt-5">Ingredientes</h2>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item">3 xícaras de farinha de trigo</li>
+                    <li class="list-group-item">2 xícaras de açúcar</li>
+                    <li class="list-group-item">1 xícara de cacau em pó</li>
+                    <li class="list-group-item">1 colher de sopa de fermento em pó</li>
+                    <li class="list-group-item">1 xícara de óleo</li>
+                    <li class="list-group-item">1 xícara de água quente</li>
+                    <li class="list-group-item">2 ovos</li>
+                </ul>
+
+                <!-- Modo de Preparo -->
+                <h2 class="mt-5">Modo de Preparo</h2>
+                <ol class="list-group list-group-numbered mb-4">
+                    <li class="list-group-item">Pré-aqueça o forno a 180°C.</li>
+                    <li class="list-group-item">Em uma tigela, misture os ingredientes secos: farinha, açúcar, cacau em pó e fermento.</li>
+                    <li class="list-group-item">Adicione os ingredientes líquidos: óleo, água quente e ovos. Misture bem até obter uma massa homogênea.</li>
+                    <li class="list-group-item">Despeje a massa em uma forma untada e leve ao forno por 40 minutos.</li>
+                    <li class="list-group-item">Faça o teste do palito: se sair limpo, o bolo está pronto.</li>
+                    <li class="list-group-item">Deixe esfriar antes de servir.</li>
+                </ol>
+
+                <!-- Dicas -->
+                <h2 class="mt-5">Dicas</h2>
+                <p>Para um bolo ainda mais saboroso, você pode adicionar:</p>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item">Gotas de chocolate.</li>
+                    <li class="list-group-item">Cobertura de ganache.</li>
+                    <li class="list-group-item">Raspas de chocolate por cima.</li>
+                </ul>
+            </div>
+
+            <!-- Barra Lateral (opcional) -->
+            <div class="col-lg-4">
+                <div class="bg-light p-4 rounded">
+                    <h3 class="mb-4">Receitas Relacionadas</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="#" class="text-decoration-none">
+                                <img src="bolo-de-cenoura.jpg" alt="Bolo de Cenoura" class="img-fluid rounded mb-2">
+                                <h5 class="mb-0">Bolo de Cenoura</h5>
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-decoration-none">
+                                <img src="pudim.jpg" alt="Pudim de Leite" class="img-fluid rounded mb-2">
+                                <h5 class="mb-0">Pudim de Leite</h5>
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-decoration-none">
+                                <img src="torta-de-maca.jpg" alt="Torta de Maçã" class="img-fluid rounded mb-2">
+                                <h5 class="mb-0">Torta de Maçã</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (reaproveitado do index.html) -->
+    <footer class="custom-footer py-3 text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Receitinhas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS (reaproveitado do index.html) -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -266,3 +266,15 @@ body.dark-mode footer p {
         height: 60px; /* Tamanho menor para dispositivos móveis */
     }
 }
+
+
+/* Modo Noturno - Ajustes para a página de receita */
+body.dark-mode .list-group-item {
+    background-color: #333; /* Fundo escuro para itens da lista */
+    color: #f0f0f0; /* Texto branco para itens da lista */
+}
+
+body.dark-mode .bg-light {
+    background-color: #444 !important; /* Fundo escuro para a barra lateral */
+    color: #f0f0f0; /* Texto branco para a barra lateral */
+}

@@ -1,6 +1,6 @@
 /* Estilos Gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background-color: #fff8e1; /* Amarelo claro */
@@ -10,9 +10,14 @@ body {
 
 /* Estilos do Header */
 header {
-    background-color: #ffeb3b; /* Amarelo vibrante */
+    background-color: #03bb85; /* Azul (troque para a cor desejada) */
     padding: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
 }
 
 header h1 {
@@ -38,7 +43,8 @@ header a:hover {
 /* Estilos do Logo */
 .logo {
     display: inline-block;
-    height: 60px; /* Altura do logo */
+    height: 100px; 
+    margin-right: 20px; /* Espaço entre o logo e o conteúdo centralizado */
 }
 
 .logo img {
@@ -47,44 +53,18 @@ header a:hover {
     transition: opacity 0.3s ease;
 }
 
-.logo:hover img {
-    opacity: 0.8; /* Efeito de hover suave */
+
+/* Conteúdo Centralizado */
+header .flex-grow-1 {
+    flex-grow: 1; 
+    text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-/* Estilos do Logo */
-.logo {
-    display: inline-block;
-    height: 60px; /* Altura do logo */
-}
-
-.logo img {
-    height: 100%;
-    width: auto;
-    transition: opacity 0.3s ease;
-}
-
-.logo:hover img {
-    opacity: 0.8; /* Efeito de hover suave */
+/* Estilos do Header */
+.custom-header {
+    background-color: #03bb85;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Botão de Toggle (Switch) */
@@ -118,12 +98,12 @@ nav ul li a {
 
 .slider:before {
     position: absolute;
-    content: "☀️"; 
+    content: "\00263C"; /*sol */
     height: 26px;
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: #fff;
     transition: transform 0.3s ease;
     border-radius: 50%;
     display: flex;
@@ -133,11 +113,12 @@ nav ul li a {
 }
 
 input:checked + .slider {
-    background-color: #ffeb3b; /* Amarelo vibrante */
+    background-color: #03bb85; 
 }
 
 input:checked + .slider:before {
-    content: "🌙"; 
+    content: "\00263E"; /* lua */
+    background-color: #333;
     transform: translateX(26px);
 }
 
@@ -163,7 +144,7 @@ main {
 
 .card {
     background-color: #fff;
-    border: 1px solid #ffeb3b; /* Amarelo vibrante */
+    border: 1px solid #03bb85; /* Amarelo vibrante */
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
@@ -185,7 +166,7 @@ main {
 
 .card-title {
     margin-top: 0;
-    color: #f57f17; /* Amarelo escuro */
+    color: #03bb85; /* Amarelo escuro */
     transition: color 0.3s ease;
 }
 
@@ -195,30 +176,32 @@ main {
 }
 
 .btn-warning {
-    background-color: #ffeb3b;
-    border-color: #ffeb3b;
+    background-color: #03bb85;
+    border-color: #03bb85;
     color: #333;
     font-weight: bold;
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-warning:hover {
-    background-color: #fdd835;
-    border-color: #fdd835;
+    background-color: #03bb85;
+    border-color: #03bb85;
 }
 
 /* Footer */
-footer {
-    background-color: #ffeb3b;
+
+/* Estilos do Footer */
+.custom-footer {
+    background-color: #03bb85; 
     padding: 10px;
     text-align: center;
     margin-top: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-footer p {
+.custom-footer p {
     margin: 0;
-    color: #333;
+    color: #ffffff; /* Texto branco */
     transition: color 0.3s ease;
 }
 
@@ -228,49 +211,58 @@ body.dark-mode {
     color: #f0f0f0; /* Branco */
 }
 
-.dark-mode header {
+body.dark-mode header {
     background-color: #333;
+}
+
+body.dark-mode header h1 {
     color: #f0f0f0;
 }
 
-.dark-mode header h1 {
+body.dark-mode header a {
     color: #f0f0f0;
 }
 
-.dark-mode nav ul li a {
-    color: #f0f0f0;
+body.dark-mode header a:hover {
+    color: #03bb85; /* Amarelo vibrante */
 }
 
-.dark-mode .card {
+body.dark-mode .card {
     background-color: #333;
     border-color: #444;
     color: #f0f0f0;
 }
 
-.dark-mode .card-title {
-    color: #ffeb3b; /* Amarelo vibrante */
+body.dark-mode .card-title {
+    color: #03bb85; /* Amarelo vibrante */
 }
 
-.dark-mode .card-text {
+body.dark-mode .card-text {
     color: #ccc;
 }
 
-.dark-mode .btn-warning {
+body.dark-mode .btn-warning {
     background-color: #444;
     border-color: #555;
     color: #f0f0f0;
 }
 
-.dark-mode .btn-warning:hover {
+body.dark-mode .btn-warning:hover {
     background-color: #555;
     border-color: #666;
 }
 
-.dark-mode footer {
+body.dark-mode footer {
     background-color: #222;
     color: #f0f0f0;
 }
 
-.dark-mode footer p {
+body.dark-mode footer p {
     color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        height: 60px; /* Tamanho menor para dispositivos móveis */
+    }
 }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas - Receitinhas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="custom-header py-3">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <!-- Logo -->
+                <a href="index.html" class="logo me-3">
+                    <img src="imagens/logoBranco.png" alt="Logo Receitinhas" class="img-fluid" style="max-height: 60px;">
+                </a>
+
+                <!-- Nome do Site e Links (Centralizados) -->
+                <div class="flex-grow-1 text-center">
+                    <h1 class="text-white mb-3">Receitinhas</h1>
+                    <div class="d-flex justify-content-center gap-4">
+                        <a href="index.html" class="text-white text-decoration-none fw-bold">Início</a>
+                        <a href="receitas.html" class="text-white text-decoration-none fw-bold">Receitas</a>
+                        <a href="#" class="text-white text-decoration-none fw-bold">Sobre</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Botão de Toggle para Modo Noturno -->
+    <div class="text-end mt-3 me-3">
+        <label class="switch">
+            <input type="checkbox" id="toggle-mode">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4">Nossas Receitas</h1>
+            <p class="lead">Explore nossa coleção de receitas deliciosas, feitas com carinho para você.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Card 1: Bolo de Chocolate -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/bolo-de-chocolate.jpg" class="card-img-top" alt="Bolo de Chocolate">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Bolo de Chocolate</h5>
+                        <p class="card-text">Um delicioso e fofinho bolo de chocolate para adoçar o seu dia.</p>
+                        <a href="bolo_chocolate.html" class="btn btn-warning mt-auto">Ver Receita</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2: Pão de Queijo -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/pao-de-queijo.jpg" class="card-img-top" alt="Pão de Queijo">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pão de Queijo</h5>
+                        <p class="card-text">O tradicional pão de queijo mineiro, crocante por fora e macio por dentro.</p>
+                        <a href="pao-de-queijo.html" class="btn btn-warning mt-auto">Ver Receita</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 3: Bolo de Cenoura (Exemplo) -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/bolo-de-cenoura.jpg" class="card-img-top" alt="Bolo de Cenoura">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Bolo de Cenoura</h5>
+                        <p class="card-text">O clássico bolo de cenoura com uma cobertura de chocolate irresistível.</p>
+                        <a href="#" class="btn btn-warning mt-auto">Ver Receita</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 4: Pudim de Leite (Exemplo) -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imagens/pudim.jpg" class="card-img-top" alt="Pudim de Leite">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Pudim de Leite</h5>
+                        <p class="card-text">Uma sobremesa cremosa e clássica que agrada a todos os paladares.</p>
+                        <a href="#" class="btn btn-warning mt-auto">Ver Receita</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adicione mais cards de receita aqui conforme necessário -->
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="custom-footer py-3 text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Receitinhas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
